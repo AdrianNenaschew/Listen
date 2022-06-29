@@ -15,5 +15,4 @@ public class Test {
 		liste.firstlast();
 		System.out.println("Gesuchtes Element: "+liste.find(6));
 	}
-
 }

@@ -1,16 +1,19 @@
 public class Test {
 
 	public static void main(String[] args) {
-		Liste liste = new Liste(3);
+		Liste liste = new Liste(8);
+		liste.add(0);
+		liste.add(0);
+		liste.add(8);
+		liste.add(2);
+		liste.add(1);
 		liste.add(5);
-		liste.add(7);
-		liste.add(9);
-		liste.add(12);
-		liste.add(13);
-		liste.add(7);
-		System.out.println(liste);
-		System.out.println(liste.counter());
-		
+		liste.remove(2);
+		liste.addhead(187);	
+		System.out.println("Liste: "+liste);
+		System.out.println("Counter: "+liste.counter());
+		liste.firstlast();
+		System.out.println("Gesuchtes Element: "+liste.find(6));
 	}
 
 }

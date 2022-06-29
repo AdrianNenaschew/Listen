@@ -1,6 +1,7 @@
  public class Liste {
 
 		private ListenElement kopf;
+		private ListenElement temp;
 	
 	public Liste (int wert) {
 		kopf=new ListenElement(wert);
@@ -18,6 +19,25 @@
 	   return kopf.count();
 	}
 	
-	
-	
+	public void addhead(int wert) {
+		temp=kopf;
+		kopf=new ListenElement(wert);
+		kopf.add(temp);
 }
+	
+	public void firstlast() {
+		System.out.println("Erstes Element: "+kopf.getInhalt());
+		kopf.firstlast();
+}
+	
+	public int find(int wert) {
+	return kopf.find(wert);
+	}
+	
+	public void remove(int wert) {
+		if(kopf.getInhalt()==wert) {
+			kopf=kopf.getNext();
+		}
+		kopf.remove(wert);
+		}
+ }

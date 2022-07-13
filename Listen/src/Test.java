@@ -1,6 +1,9 @@
+import java.util.Arrays;
+
 public class Test {
 
 	public static void main(String[] args) {
+		/*
 		Liste liste = new Liste(8);
 		liste.add(0);
 		liste.add(0);
@@ -14,5 +17,13 @@ public class Test {
 		System.out.println("Counter: "+liste.counter());
 		liste.firstlast();
 		System.out.println("Gesuchtes Element: "+liste.find(6));
+	
+		*/
+		QuickSort q= new QuickSort();
+		int[] zuSortieren= {7,2,4,8,6,1,3,5,9,3 ,3 };
+		System.out.println(Arrays.toString(zuSortieren));
+		q.quicksort(zuSortieren,0,10);
+		System.out.println(Arrays.toString(zuSortieren));
 	}
+	
 }

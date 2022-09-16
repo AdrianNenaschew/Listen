@@ -7,6 +7,12 @@ public class ListenElement {
 		this.inhalt = inhalt;
 	}
 
+	
+public boolean isEmpty() {return true;}
+	
+	public void top() {}
+	
+	
 	public void add(ListenElement neu) {
 		if (next == null) {
 			next = neu;
@@ -15,10 +21,52 @@ public class ListenElement {
 		}
 	}
 
-	public int getInhalt() {
-		return inhalt;
+	public void remove() {
+		if(next==null) {
+			System.out.println(inhalt);
+		
+	}else {
+		next.remove();
 	}
+		return;
+}
+	
+	
+	 public int getGroesse(int anzahl){
+		 int zahl = anzahl+1;
+		 if(next!=null){
+			return next.getGroesse(zahl);}
+		 
+		 return zahl;
+			 
+		 }
+	
+	 public String getInhalt() {
+		 return ""+inhalt;
+	 }
 
+	 
+	public String toString() {
+		if (next == null) {
+			return "" + inhalt;
+		} else {
+			return "" + inhalt + " " + next.toString();
+		}
+	}
+}
+	
+	
+
+
+
+
+
+
+
+
+
+	
+/*	
 	public void firstlast() {
 		if (next == null) {
 			System.out.println("Letztes Element: " + inhalt);
@@ -27,13 +75,7 @@ public class ListenElement {
 		}
 	}
 
-	public String toString() {
-		if (next == null) {
-			return "" + inhalt;
-		} else {
-			return "" + inhalt + " " + next.toString();
-		}
-	}
+
 
 	public int count() {
 		if (next == null) {
@@ -54,6 +96,25 @@ public class ListenElement {
 
 	}
 
+
+	public void remove(int wert) {
+		if (next != null) {
+		if(next.getInhalt()==wert) {
+			if(next.getNext()!=null) {
+			next=next.getNext();
+		}else {
+			next=null;
+		}
+		}
+		else{ 
+			if(next!=null) {
+				next.remove(wert);
+			}
+	}
+	}
+}
+
+
 	public int find(int wert) {
 		if (inhalt==wert) {
 			return inhalt;
@@ -72,20 +133,7 @@ public class ListenElement {
 		return next;
 	}
 	
-	public void remove(int wert) {
-		if (next != null) {
-		if(next.getInhalt()==wert) {
-			if(next.getNext()!=null) {
-			next=next.getNext();
-		}else {
-			next=null;
-		}
-		}
-		else{ 
-			if(next!=null) {
-				next.remove(wert);
-			}
-	}
-	}
+
 }
-}
+	
+*/

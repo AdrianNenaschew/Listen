@@ -3,10 +3,11 @@ public class BubbleSort {
 	static int[] array = { 4, 7, 3, 4, 9, 7, 1, 2 };
 	
 	
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		ausgabe(array);
 		ausgabe(Sort(array));
 	}
+	*/
 	
 	public static int[] Sort(int array[]) {
 		int[] sort = array;

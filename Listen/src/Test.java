@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class Test {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
 		Liste liste = new Liste(8);
 		liste.add(0);
@@ -14,8 +14,27 @@ public class Test {
 		liste.add(5);
 		System.out.println("Liste: "+liste);
 		
+		System.out.println();
 		
+		Stack stack = new Stack(4);
+		stack.push(4);
+		stack.push(1);
+		stack.push(2);
+		stack.push(7);
+		System.out.println("Stack: "+stack);
+		System.out.println("Länge: "+stack.getGroesse());
+		stack.top();
 		
+		System.out.println();
+		
+		Queue queue = new Queue(4);
+		queue.enqueue(7);
+		queue.enqueue(1);
+		queue.enqueue(2);
+		queue.enqueue(18);
+		System.out.println("Queue: "+queue);
+		System.out.println("Länge: "+queue.getGroesse());
+		queue.front();
 	}	
 }
 		

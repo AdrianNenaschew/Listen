@@ -53,6 +53,11 @@ public boolean isEmpty() {return true;}
 			return "" + inhalt + " " + next.toString();
 		}
 	}
+	
+	
+	public ListenElement getNext() {
+		return next;
+	}
 }
 	
 	

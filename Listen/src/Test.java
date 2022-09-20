@@ -35,9 +35,23 @@ public class Test {
 		System.out.println("Queue: "+queue);
 		System.out.println("Länge: "+queue.getGroesse());
 		queue.front();
-	}	
-}
 		
+		System.out.println();
+	
+		
+		ArrayStack arraystack = new ArrayStack();
+		System.out.print("Array: ");
+		arraystack.push(1);
+		arraystack.push(8);
+		arraystack.push(7);
+		System.out.println();
+		System.out.print("Kopie: ");
+		arraystack.copy();
+		
+	//	System.out.println("ArrayStack: "+arraystack);
+		
+}
+}	
 		
 		/*
 		Liste liste = new Liste(8);

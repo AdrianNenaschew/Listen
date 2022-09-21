@@ -48,6 +48,32 @@ public class Test {
 		System.out.print("Kopie: ");
 		arraystack.copy();
 		
+		System.out.println();
+		System.out.println();
+		
+		ArrayQueue arrayqueue = new ArrayQueue();
+		System.out.print("Queue: ");
+		arrayqueue.enqueue(1);
+		arrayqueue.enqueue(8);
+		arrayqueue.enqueue(7);
+		arrayqueue.enqueue(187);
+		arrayqueue.ausgabe();
+		
+	/*	System.out.print("Neue Queue: ");
+		arrayqueue.dequeue();
+		arrayqueue.dequeue();
+		arrayqueue.ausgabe();
+	*/	
+		
+		ArrayQueue con = new ArrayQueue();
+		System.out.print("Zusammengefügt: ");
+		arrayqueue.enqueue(1);
+		arrayqueue.enqueue(1);
+		arrayqueue.enqueue(0);
+		arrayqueue.concet(con);
+		arrayqueue.ausgabe();
+		
+		
 	//	System.out.println("ArrayStack: "+arraystack);
 		
 }

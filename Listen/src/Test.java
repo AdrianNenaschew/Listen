@@ -73,7 +73,7 @@ public class Test {
 		arrayqueue.concet(con);
 		arrayqueue.ausgabe();
 		
-		
+		System.out.println(arrayqueue.equals(1));
 	//	System.out.println("ArrayStack: "+arraystack);
 		
 }

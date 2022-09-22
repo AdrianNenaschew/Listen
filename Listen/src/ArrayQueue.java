@@ -28,22 +28,24 @@ public class ArrayQueue {
 		if (!empty())
 			return queue[0];
 		else
-			return -1;
+			return -999;
 	}
 
 	public boolean empty() {
-		return (eoq == -1);
+		return (eoq == 0);
 	}
 
 	public void ausgabe() {
 
-		int tmp = 0;
-		while (tmp != eoq) {
-			System.out.print(queue[tmp] + " ");
-			tmp++;
+		int dummy = 0;
+		while (dummy != eoq) {
+
+			System.out.print(queue[dummy] + " ");
+			dummy++;
 
 		}
 		System.out.println(" ");
+
 	}
 
 	public void concet(ArrayQueue queue2) {
@@ -57,15 +59,16 @@ public class ArrayQueue {
 	}
 
 	public boolean equal(int x) {
-		int tmp = 0;
-		while (tmp != eoq) {
-			if (queue[tmp] == x) {
+
+		int tmptos = eoq - 1;
+		while (tmptos > 0) {
+			if (queue[tmptos] == x) {
+
 				return true;
 			} else {
-				tmp++;
+				tmptos--;
 			}
 		}
 		return false;
-
 	}
 }

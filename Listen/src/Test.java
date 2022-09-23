@@ -73,9 +73,16 @@ public class Test {
 		arrayqueue.concet(con);
 		arrayqueue.ausgabe();
 		
-		System.out.println(arrayqueue.equals(8));
+		System.out.println(arrayqueue.equal(8));
 		
-	//	System.out.println("ArrayStack: "+arraystack);
+		
+		System.out.println();
+		
+		BuildTree tree = new BuildTree();
+		tree.root.insert(75);
+		tree.root.left.right.show();
+		
+		
 		
 }
 }	

@@ -10,9 +10,7 @@ public class ArrayQueue {
 
 	public void enqueue(int x) {
 		if (eoq < 99) {
-
 			queue[eoq] = x;
-			// System.out.print(x + " ");
 			eoq++;
 		}
 	}
@@ -59,11 +57,9 @@ public class ArrayQueue {
 	}
 
 	public boolean equal(int x) {
-
 		int tmptos = eoq - 1;
-		while (tmptos > 0) {
+		while (tmptos >= 0) {
 			if (queue[tmptos] == x) {
-
 				return true;
 			} else {
 				tmptos--;

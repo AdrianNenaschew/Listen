@@ -5,6 +5,30 @@ public class Test {
 
 	public static void main(String[] args) throws Exception {
 		
+	
+		
+		BuildTree tree = new BuildTree();
+		tree.root = new Element(42);
+		tree.root.insert(9);
+		tree.root.insert(8);
+		tree.root.insert(14);
+		tree.root.insert(90);
+		tree.root.insert(122);
+		tree.root.insert(569);
+		tree.root.insert(98);
+		
+		System.out.println("Depth of tree: "+tree.root.depth(1));
+	
+		System.out.println();
+		System.out.print("PreOrder: ");
+		tree.root.preOrder();
+
+		
+		
+}
+
+}	
+		/*
 		Liste liste = new Liste(8);
 		liste.add(0);
 		liste.add(0);
@@ -59,11 +83,11 @@ public class Test {
 		arrayqueue.enqueue(187);
 		arrayqueue.ausgabe();
 		
-	/*	System.out.print("Neue Queue: ");
+		System.out.print("Neue Queue: ");
 		arrayqueue.dequeue();
 		arrayqueue.dequeue();
 		arrayqueue.ausgabe();
-	*/	
+		
 		
 		ArrayQueue con = new ArrayQueue();
 		System.out.print("Zusammengefügt: ");
@@ -78,16 +102,8 @@ public class Test {
 		
 		System.out.println();
 		
-		BuildTree tree = new BuildTree();
-		tree.root.insert(75);
-		tree.root.left.right.show();
 		
 		
-		
-}
-}	
-		
-		/*
 		Liste liste = new Liste(8);
 		liste.add(0);
 		liste.add(0);

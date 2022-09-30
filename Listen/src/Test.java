@@ -4,9 +4,29 @@ import java.util.Random;
 public class Test {
 
 	public static void main(String[] args) throws Exception {
+		PQueue pqueue = new PQueue();
+		pqueue.insert(new Notruf(1, "Fahrrad Bumm", 9,30,0,1));
+		pqueue.insert(new Notruf(2, "Auto Bumm", 9,32,0,2));
+		pqueue.insert(new Notruf(3, "Junge tot", 9,34,0,2));
+		pqueue.insert(new Notruf(4, "Flugzeug weg", 9,36,0,3));
+		pqueue.insert(new Notruf(5, "Ohr gebrochen", 9,38,0,1));
+		pqueue.insert(new Notruf(6, "Hamster überfahren", 9,40,0,2));
+		pqueue.insert(new Notruf(7, "Im Klo ausgesperrt", 9,42,0,2));
+		pqueue.insert(new Notruf(8, "Schultoilette angezündet", 9,44,0,3));
 		
-	
+		pqueue.output();
+
 		
+		
+}
+
+}	
+		/*
+		  
+		  
+		  
+		  
+		  		
 		BuildTree tree = new BuildTree();
 		tree.root = new Element(42);
 		tree.root.insert(9);
@@ -22,13 +42,20 @@ public class Test {
 		System.out.println();
 		System.out.print("PreOrder: ");
 		tree.root.preOrder();
-
+		System.out.println();
+		System.out.print("InOrder: ");
+		tree.root.inOrder();
+		System.out.println();
+		System.out.print("PostOrder: ");
+		tree.root.postOrder();
+		System.out.println();
+		System.out.println();
+		System.out.println("Counter: " + tree.root.counter());
 		
 		
-}
-
-}	
-		/*
+		
+		
+		
 		Liste liste = new Liste(8);
 		liste.add(0);
 		liste.add(0);

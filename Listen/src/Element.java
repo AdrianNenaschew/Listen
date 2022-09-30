@@ -4,6 +4,7 @@ public class Element {
 	public int value2;
 	public Element left, right;
 	public static int maxdepth = 0;
+	public static int counter = 0;
 
 	public Element(int n) {
 		value = n;
@@ -68,7 +69,48 @@ public class Element {
 		
 	}
 	
-	
+	public void inOrder() {
+
+		if (left != null) {
+			left.inOrder();
+		}
+		System.out.print(value + " ");
+		if (right != null) {
+			right.inOrder();
+		}
+	}
+
+	public void postOrder() {
+
+		if (left != null) {
+			left.postOrder();
+		}
+
+		if (right != null) {
+			right.postOrder();
+		}
+		System.out.print(value + " ");
+
+	}
+
+	public int counter() {
+		counter++;
+		if (left != null) {
+			left.counter();
+		}
+		// System.out.println("Lefttiefe: " + depth + " Maxtiefe: " + maxdepth);
+		
+
+		if (right != null)
+
+		{
+			right.counter();
+		}
+		// System.out.println("Righttiefe: " + depth + " Maxtiefe: " + maxdepth);
+
+		return counter;
+	}
+
 	
 	
 	

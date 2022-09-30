@@ -15,7 +15,7 @@ public class Test {
 		pqueue.insert(new Notruf(8, "Schultoilette angezündet", 9,44,0,3));
 		
 		pqueue.output();
-		System.out.println(pqueue.max());
+		System.out.println("Wichtigester Notruf: " + pqueue.max());
 
 		
 		

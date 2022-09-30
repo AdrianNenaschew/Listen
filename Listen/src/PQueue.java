@@ -24,13 +24,19 @@ public class PQueue {
     }
     
     public int max() {
-    	int i=0;
-    	int dummyprio=1;
-    	while(!empty()) {
-    		if(pqueue.get(i).prio==dummyprio) {
-    			return pqueue.get(i).prio;
-    		}
-    	}
-    	return 0;
+        int i=0;
+        int dummyprio=1;
+        while(dummyprio<4) {
+            while(!empty()) {
+                if(pqueue.get(i).prio==dummyprio) {
+                    return pqueue.get(i).nummer;
+                }
+                i++;
+            }
+            dummyprio++;
+        }
+        
+        return 0;
+        
     }
 }
